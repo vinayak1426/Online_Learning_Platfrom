@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="profile-page">
+    <div class="profile-container">
+        <h2>User Profile</h2>
+        <img src="images/default-profile.png" alt="Profile Picture" class="profile-pic">
+        <form action="backend/update_profile.php" method="POST">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">New Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="btn">Update Profile</button>
+        </form>
+    </div>
+
+    <!-- Link JavaScript File Here -->
+    <script src="script.js"></script>
+</body>
+</html>
